@@ -33,11 +33,8 @@
 import Vue, { PropType } from "vue";
 
 import { Office } from "../models/index";
-import OfficeCard from "./OfficeCard.vue";
-import OfficeForm from "./OfficeForm.vue";
 
 export default Vue.extend({
-	components: { OfficeCard, OfficeForm },
 	props: {
 		offices: {
 			type: Array as PropType<Office[]>,

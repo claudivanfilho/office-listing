@@ -115,13 +115,9 @@
 <script lang="ts">
 import Vue, { PropType } from "vue";
 
-import BaseInput from "./base/BaseInput.vue";
-import BaseIcon from "./base/BaseIcon.vue";
-import TButton from "./ds/TButton.vue";
 import { Office } from "../models/index";
 
 export default Vue.extend({
-	components: { BaseInput, BaseIcon, TButton },
 	props: {
 		office: {
 			type: Object as PropType<Office>,

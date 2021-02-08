@@ -13,9 +13,8 @@
 
 <script lang="ts">
 import Vue from "vue";
-import BaseIcon from "./BaseIcon.vue";
+
 export default Vue.extend({
-	components: { BaseIcon },
 	props: {
 		icon: {
 			type: String,

@@ -14,7 +14,6 @@
 
 <script lang="ts">
 import Vue, { PropType } from "vue";
-import BaseButton from "../base/BaseButton.vue";
 
 enum ButtonTypes {
 	PRIMARY = "primary",
@@ -71,7 +70,6 @@ export default Vue.extend({
 			required: false
 		}
 	},
-	components: { BaseButton },
 	computed: {
 		classes(): string {
 			if (this.disabled) {

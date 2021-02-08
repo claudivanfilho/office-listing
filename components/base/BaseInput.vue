@@ -26,11 +26,9 @@
 <script lang="ts">
 import Vue, { PropType } from "vue";
 
-import BaseIcon from "./BaseIcon.vue";
 type Validator = (arg: string) => true | string;
 
 export default Vue.extend({
-	components: { BaseIcon },
 	props: {
 		value: String,
 		validators: {

@@ -73,12 +73,9 @@
 
 <script lang="ts">
 import Vue, { PropType } from "vue";
-import BaseIcon from "./base/BaseIcon.vue";
-import TButton from "./ds/TButton.vue";
 import { Office } from "../models/index";
 
 export default Vue.extend({
-	components: { BaseIcon, TButton },
 	props: {
 		opened: Boolean,
 		office: Object as PropType<Office>
