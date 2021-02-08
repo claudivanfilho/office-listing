@@ -10,7 +10,7 @@
 					Offices
 				</div>
 				<div
-					class="overflow-y-auto flex flex-col items-center overflow-x-auto mt-8 "
+					class="overflow-y-auto flex flex-col items-center overflow-x-auto mt-12"
 					style="height: calc(100vh - 180px)"
 				>
 					<div class="mb-6 px-3 w-full md:w-96">
