@@ -1,5 +1,7 @@
 <template>
-	<div class="shadow-lg rounded-lg overflow-auto overflow-y-hidden bg-white">
+	<div
+		class="office-card shadow-lg rounded-lg overflow-auto overflow-y-hidden bg-white"
+	>
 		<div
 			class="transition-all duration-300 relative  flex justify-between items-center px-6 py-6 shadow-lg"
 			:class="headerClass"

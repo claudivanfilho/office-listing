@@ -16,6 +16,7 @@
 					<div class="mb-6 px-3 w-full md:w-96">
 						<transition name="fade" mode="out-in">
 							<TButton
+								id="addOfficeButton"
 								:type="'primary'"
 								icon="Plus"
 								class="w-full justify-between"

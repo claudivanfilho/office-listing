@@ -1,5 +1,6 @@
 <template>
 	<div
+		id="Alert"
 		class="transition-all duration-150 fixed left-0 w-full flex justify-center items-center h-20 bg-white"
 		:class="(!visible && '-top-1/2') || 'top-0'"
 	>
