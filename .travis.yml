@@ -8,8 +8,6 @@ branches:
 cache:
   directories:
     - node_modules
-before_install:
-  - npm upgrade
 install:
   - npm install
 script:
