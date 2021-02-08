@@ -1,11 +1,13 @@
 <template>
 	<div class="flex flex-col">
-		<div
-			v-for="(office, index) in officesData"
-			:key="`office${index}`"
-			class="mb-6"
-		>
-			<div v-if="office">
+		<TAlert
+			icon="Check"
+			:message="alertMessage"
+			:visible="alertVisible"
+			@close="alertVisible = false"
+		/>
+		<div v-for="(office, index) in officesData" :key="`office${index}`">
+			<div v-if="office" class="mb-6">
 				<transition name="fade" mode="out-in">
 					<OfficeCard
 						:office="office"
@@ -47,7 +49,9 @@ export default Vue.extend({
 				...office,
 				opened: false,
 				editing: false
-			}))
+			})),
+			alertVisible: false,
+			alertMessage: ""
 		};
 	},
 	methods: {
@@ -59,11 +63,15 @@ export default Vue.extend({
 				editing: false
 			};
 			this.officesData = newOfficeData;
+			this.alertMessage = "The location has been updated";
+			this.alertVisible = true;
 		},
 		onRemove(index: number) {
 			const newOfficeData = [...this.officesData];
 			delete newOfficeData[index];
 			this.officesData = newOfficeData;
+			this.alertMessage = "The location has been deleted";
+			this.alertVisible = true;
 		}
 	},
 	watch: {

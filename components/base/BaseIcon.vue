@@ -22,6 +22,8 @@ import Delete from "vue-material-design-icons/DeleteOutline.vue";
 import AlertCircle from "vue-material-design-icons/AlertCircle.vue";
 // @ts-ignore
 import Close from "vue-material-design-icons/Close.vue";
+// @ts-ignore
+import Check from "vue-material-design-icons/Check.vue";
 
 export default Vue.extend({
 	props: {
@@ -41,7 +43,8 @@ export default Vue.extend({
 				TrashCan,
 				Delete,
 				AlertCircle,
-				Close
+				Close,
+				Check
 			}
 		};
 	}

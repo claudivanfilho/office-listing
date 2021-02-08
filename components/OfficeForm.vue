@@ -4,7 +4,7 @@
 	>
 		<div class="flex justify-between py-4 mb-4">
 			<span class="text-dark-blue font-bold">
-				{{ office ? "EDit Location" : "New Location" }}
+				{{ office ? "Edit Location" : "New Location" }}
 			</span>
 			<button @click="$emit('close')">
 				<BaseIcon icon="Close" class="text-primary-grey" />

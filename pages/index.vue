@@ -4,14 +4,16 @@
 			<div
 				class="w-full md:w-104 flex flex-col justify-center items-center"
 			>
-				<div class="text-accent-blue text-6xl text-center mt-8">
+				<div
+					class="text-accent-blue text-6xl text-center mt-28 font-light"
+				>
 					Offices
 				</div>
 				<div
-					class="overflow-y-auto flex flex-col items-center overflow-x-auto"
+					class="overflow-y-auto flex flex-col items-center overflow-x-auto mt-8 "
 					style="height: calc(100vh - 180px)"
 				>
-					<div class="mb-6 mt-8 px-3 w-full md:w-96">
+					<div class="mb-6 px-3 w-full md:w-96">
 						<transition name="fade" mode="out-in">
 							<TButton
 								:type="'primary'"
@@ -34,7 +36,7 @@
 						<OfficeList :offices="offices" />
 					</div>
 				</div>
-				<div class="flex flex-col items-center mt-3">
+				<div class="flex flex-col items-center mt-3 mb-4">
 					<span class="text-primary-grey">
 						This project is for test purpose only.
 					</span>
@@ -66,13 +68,23 @@ export default Vue.extend({
 			createMode: false,
 			offices: [
 				{
-					title: "Office teste",
-					address: "aasldak sldkalaskd alksd a asda",
+					title: "Headquarters",
+					address: "3763 W. Dallas St.",
 					contact: {
-						fullName: "asdjkasjd  kajsd kajsdk ajs dkaj s",
-						jobPosition: "aksdja skajsd kajsdk asdj aksjd akjs dj ",
-						email: "tstemadsakldalk@asdm.commmmmmm",
-						phone: "(009) 123123123123"
+						fullName: "Hellena John",
+						jobPosition: "Software Tester",
+						email: "georgia.young@example.com",
+						phone: "(808) 555-0111"
+					}
+				} as Office,
+				{
+					title: "Headquarters 2",
+					address: "2000 W. Dallas St.",
+					contact: {
+						fullName: "John Sena",
+						jobPosition: "Software Developer",
+						email: "john.sena@example.com",
+						phone: "(123) 888-0111"
 					}
 				} as Office
 			]
