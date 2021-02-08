@@ -7,7 +7,15 @@
     "start": "nuxt start"
   },
   "dependencies": {
+    "@nuxtjs/tailwindcss": "^3.4.2",
+    "autoprefixer": "^10.2.4",
     "nuxt": "^2.14.6",
-    "tailwindcss": "^1.8.10"
+    "postcss": "^8.2.5",
+    "tailwindcss": "^2.0.3",
+    "vue-material-design-icons": "^4.11.0"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.14.12",
+    "@nuxt/typescript-build": "^2.0.4"
   }
 }
