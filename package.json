@@ -1,5 +1,5 @@
 {
-  "name": "dps-senior-frontend-test",
+  "name": "office-listing",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt generate",
