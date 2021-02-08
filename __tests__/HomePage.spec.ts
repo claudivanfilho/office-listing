@@ -8,6 +8,7 @@ import TAlert from "../components/ds/TAlert.vue";
 import OfficeCard from "../components/OfficeCard.vue";
 import OfficeForm from "../components/OfficeForm.vue";
 import OfficeList from "../components/OfficeList.vue";
+import Footer from "../components/Footer.vue";
 
 Vue.component("BaseButton", BaseButton);
 Vue.component("BaseInput", BaseInput);
@@ -16,6 +17,7 @@ Vue.component("TAlert", TAlert);
 Vue.component("OfficeCard", OfficeCard);
 Vue.component("OfficeForm", OfficeForm);
 Vue.component("OfficeList", OfficeList);
+Vue.component("Footer", Footer);
 
 import HomePage from "../pages/index.vue";
 

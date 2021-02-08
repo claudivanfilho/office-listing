@@ -37,18 +37,7 @@
 						<OfficeList :offices="offices" />
 					</div>
 				</div>
-				<div class="flex flex-col items-center mt-3 mb-4">
-					<span class="text-primary-grey">
-						This project is for test purpose only.
-					</span>
-					<a
-						href="https://dogandponystudios.com"
-						class="text-accent-blue hover:underline"
-						target="_blank"
-					>
-						www.dogandponystudios.com
-					</a>
-				</div>
+				<Footer />
 			</div>
 		</div>
 	</div>
@@ -97,7 +86,6 @@ export default Vue.extend({
 			this.createMode = true;
 		},
 		onOfficeAdded(office: Office) {
-			console.log("jasda");
 			this.offices.push(office);
 			this.createMode = false;
 		}
