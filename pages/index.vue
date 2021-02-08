@@ -41,8 +41,9 @@
 						This project is for test purpose only.
 					</span>
 					<a
-						href="www.dogandponystudios.com"
+						href="https://dogandponystudios.com"
 						class="text-accent-blue hover:underline"
+						target="_blank"
 					>
 						www.dogandponystudios.com
 					</a>
