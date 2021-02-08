@@ -5,7 +5,7 @@
 	>
 		<BaseIcon :icon="icon" class="text-accent-blue mr-3" v-if="icon" />
 		<span class="text-dark-blue">{{ message }}</span>
-		<button @click="$emit('close')" class="absolute right-8">
+		<button @click="$emit('close')" class="absolute right-6 md:right-8">
 			<BaseIcon icon="Close" class="text-primary-grey" v-if="icon" />
 		</button>
 	</div>
